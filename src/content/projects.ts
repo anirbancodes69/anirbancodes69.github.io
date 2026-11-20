@@ -51,7 +51,7 @@ export const projects: Project[] = [
     classification: "Enterprise Client Engagement",
     status: "Client delivery",
     context: "Dexian India Technologies, for CVS Health's Photo Studio",
-    role: "Senior Software Engineer & Tech Lead, backend integration",
+    role: "Technical Lead, backend integration",
     period: "2025 – Present",
     stack: ["Laravel 12", "PHP 8.2", "PostgreSQL", "Redis", "Apache Kafka", "Docker", "Stibo STEP PIM", "Adobe Experience Manager", "Azure"],
     overview: [
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     classification: "Professional / Internal Enterprise Platform",
     status: "Internal platform",
     context: "Dexian India Technologies, internal platform",
-    role: "Senior Software Engineer, contributor across integration, authorization and resource management",
+    role: "Technical Lead, contributor across integration, authorization and resource management",
     stack: ["Next.js", "React", "Redis", "Azure DevOps REST APIs", "Server-side rendering"],
     overview: [
       "PMO Assist is an internal platform for running delivery: project tracking, resource allocation, capacity planning and reporting, with AI-powered capabilities. It covers ground that teams often split between a work-tracking tool and spreadsheets.",
@@ -324,7 +324,8 @@ export const projects: Project[] = [
     status: "In development",
     context: "Independent product, solo",
     role: "Product, architecture and all engineering",
-    period: "2026",
+    period: "Nov 2026 – Present",
+    repo: "https://github.com/anirbancodes69/business_pilot",
     stack: ["TypeScript", "NestJS", "Next.js", "Python", "FastAPI", "PostgreSQL", "Row-level security", "Redis", "Keycloak", "OpenTelemetry", "Docker", "GitHub Actions"],
     maturity: {
       conceptualized: "yes",
@@ -426,7 +427,7 @@ export const projects: Project[] = [
     status: "In development, early stage",
     context: "Independent product, solo",
     role: "Product, architecture and all engineering",
-    period: "2026",
+    period: "Nov 2026 – Present",
     stack: ["Next.js 16", "React 19", "Tailwind CSS", "Lightweight Charts", "Laravel 13", "Python", "FastAPI", "PostgreSQL 17", "Redis", "Docker", "GitHub Actions"],
     maturity: {
       conceptualized: "yes",
@@ -509,7 +510,6 @@ export const projects: Project[] = [
       "Building the interface on a mock adapter first exposed two dozen mismatches between the screens and the specification before any backend existed.",
       "Writing down what is not built is as useful as writing down what is.",
     ],
-    repo: "https://github.com/anirbancodes69/price-action-ai",
   },
   {
     slug: "semantic-cache-engine",
@@ -521,7 +521,8 @@ export const projects: Project[] = [
     status: "Technical R&D",
     context: "Personal research project",
     role: "Design and implementation",
-    period: "2026",
+    period: "Oct 2026 – Present",
+    repo: "https://github.com/anirbancodes69/semantic-cache-engine",
     stack: ["Python", "FastAPI", "Redis Stack", "Redis vector search", "sentence-transformers", "Streamlit", "Docker Compose", "pytest"],
     maturity: {
       conceptualized: "yes",

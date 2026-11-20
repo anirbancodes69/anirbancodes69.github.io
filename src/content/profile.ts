@@ -14,7 +14,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/anirban-bhowmick",
   github: "https://github.com/anirbancodes69",
   resume: "/downloads/Anirban_Bhowmick_Backend_AI_Engineer.pdf",
-  currentRole: "Senior Software Engineer & Tech Lead, Dexian India Technologies",
+  currentRole: "Technical Lead, Dexian India Technologies",
 };
 
 // Every figure below comes from the resume or from a project's own status file. Nothing is estimated.
@@ -51,7 +51,7 @@ export const lanes = [
 export const about = [
   "I started in 2021 on a high-traffic education platform, where the job was keeping production healthy: more than 200 production issues resolved, slow MySQL queries rewritten, and Core Web Vitals pushed to a Page Experience score above 90.",
   "At Sunstone I moved from fixing systems to reshaping them. I led the migration of over 20 business modules from Core PHP to Laravel, put JWT-secured REST APIs in front of them, and used Redis caching to cut API response times by 30% and database load by 40%, on AWS infrastructure I also looked after.",
-  "Today I am a tech lead at Dexian, working on enterprise integration: connecting a Laravel platform to Adobe Experience Manager and Stibo STEP, moving legacy cron jobs into containerised batch workflows, and centralising secrets in Azure Key Vault. I also designed and built a proof of concept for a client that replaces IBM App Connect Enterprise flows with Kafka-based Java microservices.",
+  "Today I am a technical lead at Dexian, building AI features into an internal project and resource management platform and working on enterprise integration: connecting a Laravel platform to Adobe Experience Manager and Stibo STEP, moving legacy cron jobs into containerised batch workflows, and centralising secrets in Azure Key Vault. I also designed and built a proof of concept for a client that replaces IBM App Connect Enterprise flows with Kafka-based Java microservices.",
   "Outside work I build products end to end. The most developed is BusinessPilot, a multi-tenant AI business analyst in which the language model plans queries but never writes SQL and never decides who may see what. That is the kind of AI engineering I care about: models placed inside systems that stay correct, secure and testable.",
 ];
 
@@ -66,10 +66,12 @@ export type Role = {
 export const experience: Role[] = [
   {
     company: "Dexian India Technologies",
-    title: "Senior Software Engineer & Tech Lead",
+    title: "Technical Lead",
     period: "Jul 2025 – Present",
     stack: ["Laravel", "PHP", "PostgreSQL", "Redis", "Kafka", "Docker", "Azure Key Vault", "GitHub Actions", "AEM", "Stibo STEP", "Rundeck"],
     points: [
+      "Building AI features in PMO Assist, an internal project and resource management platform, alongside resource allocation, capacity planning, reporting and the move to server-side rendering.",
+      "Use AI-assisted engineering (Claude and other tooling) for design, code review and test generation, with human review of every change.",
       "Design and build integrations between Laravel backend systems and enterprise platforms, including Adobe Experience Manager, Stibo STEP and Azure services.",
       "Migrated legacy cron jobs and script-based processes into containerised batch workflows run with Docker and Rundeck.",
       "Integrated Azure Key Vault for centralised secrets management across deployment environments, with a configuration strategy that falls back to environment variables.",
@@ -79,12 +81,14 @@ export const experience: Role[] = [
     ],
   },
   {
-    company: "Blackboard / Collegevidya",
-    title: "Software Engineer",
+    company: "Blackboard Education & Research Foundation",
+    title: "Assistant Manager - Software and Systems",
     period: "Jun 2024 – Jan 2025",
     stack: ["Laravel", "PHP", "MySQL", "REST APIs"],
     points: [
-      "Developed Laravel and MySQL backend services for a high-traffic education platform.",
+      "Owned Laravel and MySQL backend services and automation for a high-traffic education platform.",
+      "Built real-time error logging and alerting for PHP and server issues, eliminating recurring server-side errors.",
+      "Automated email and WhatsApp communication with Laravel's scheduler and queues.",
       "Built and optimised REST APIs for frontend applications and third-party integrations.",
       "Improved database performance through query optimisation, indexing and schema changes.",
     ],
@@ -96,6 +100,7 @@ export const experience: Role[] = [
     stack: ["Laravel", "PHP", "MySQL", "Redis", "JWT", "AWS EC2", "S3", "RDS"],
     points: [
       "Led the migration of 20+ modules from Core PHP to Laravel.",
+      "Integrated 150+ REST APIs for client-facing services and external partners.",
       "Improved application performance by approximately 40% through the framework migration and backend optimisation.",
       "Reduced API response times by 30% and database load by 40% with Redis caching.",
       "Designed JWT-secured REST APIs for internal systems and external platform integrations.",
