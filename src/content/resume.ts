@@ -22,7 +22,11 @@ export const dexianPoints: Record<string, string> = {
   ado:
     "Built Azure DevOps backlog migration for PMO Assist, an internal project and resource management platform (Next.js, React, Redis): connection validation, area-path recreation, dry-run validation and re-runnable imports.",
   authz:
-    "Replaced PMO Assist's fixed-role access control with fine-grained permissions (grant model, templates, designation defaults) and contributed to resource allocation and capacity planning workflows, AI features, reporting and the move to server-side rendering.",
+    "Replaced PMO Assist's fixed-role access control with fine-grained permissions (grant model, templates, designation defaults).",
+  aiFeatures:
+    "Building AI features in PMO Assist, an internal project and resource management platform (Next.js, React, Redis), alongside resource allocation, capacity planning, reporting and the move to server-side rendering.",
+  aiAssist:
+    "Use AI-assisted engineering (Claude and other tooling) for design, code review and test generation, with human review of every change.",
   ace:
     "Designed and built a client proof of concept modernising IBM App Connect Enterprise integration flows into Java 21 / Spring Boot microservices communicating over Kafka behind a Kong gateway, with a target AWS architecture (ECS Fargate, RDS, ALB); presented findings to leadership.",
 };
@@ -30,7 +34,7 @@ export const dexianPoints: Record<string, string> = {
 export const resumeProjects: Record<string, { title: string; label: string; stack: string; points: string[] }> = {
   businesspilot: {
     title: "BusinessPilot: AI business analyst",
-    label: "Independent product, in development",
+    label: "Independent product, since Nov 2026",
     stack: "NestJS, Next.js, Python, FastAPI, PostgreSQL, Redis, Docker, GitHub Actions",
     points: [
       "Designed and built a multi-tenant platform that answers business questions from a company's own data; the language model produces validated query plans and never writes SQL or decides permissions.",
@@ -40,7 +44,7 @@ export const resumeProjects: Record<string, { title: string; label: string; stac
   },
   semanticCache: {
     title: "Semantic Cache Engine",
-    label: "Personal technical R&D",
+    label: "Personal technical R&D, since Oct 2026",
     stack: "Python, FastAPI, Redis Stack, sentence-transformers, Docker Compose",
     points: [
       "Built a two-tier cache for LLM applications: exact matching on a normalised hash, then vector similarity search over 384-dimension embeddings in Redis, with per-tenant isolation and TTL expiry.",
@@ -49,7 +53,7 @@ export const resumeProjects: Record<string, { title: string; label: string; stac
   },
   priceAction: {
     title: "Price Action AI",
-    label: "Independent product, early stage",
+    label: "Independent product, early stage, since Nov 2026",
     stack: "Next.js, Laravel, Python, FastAPI, PostgreSQL, Redis, Docker, GitHub Actions",
     points: [
       "Architected a rule-based market analysis tool in which a deterministic engine performs every calculation and a language model only explains results; documented in 12 architecture decision records.",
@@ -83,16 +87,16 @@ export const resumeVariants: ResumeVariant[] = [
     audience: "Backend fundamentals plus LLM integration, caching, guardrails and AI-enabled products",
     headline: "Senior Backend & AI Engineer",
     summary:
-      "Senior backend and AI engineer building production systems since 2021. Professionally, a tech lead delivering enterprise integrations and AI features on Laravel, PostgreSQL, Redis and Kafka. Independently, designed and built a multi-tenant AI business analyst in which the language model plans queries under validation and never touches SQL or permissions, and a semantic cache for LLM applications on Redis vector search.",
+      "Senior backend and AI engineer building production systems since 2021. Professionally, a technical lead delivering enterprise integrations and AI features on Laravel, PostgreSQL, Redis and Kafka. Independently, designed and built a multi-tenant AI business analyst in which the language model plans queries under validation and never touches SQL or permissions, and a semantic cache for LLM applications on Redis vector search.",
     skills: [
       backend,
       data,
-      ["AI Engineering (project experience)", "LLM orchestration, validated query planning, semantic caching, Redis vector search, embeddings, evaluation sets, AI-assisted engineering"],
+      ["AI Engineering", "AI feature development, LLM orchestration, validated query planning, semantic caching, Redis vector search, embeddings, evaluation sets, AI-assisted engineering"],
       cloud,
       enterprise,
       ["Project Experience", "Python, FastAPI, NestJS, Next.js, Java 21, Spring Boot"],
     ],
-    dexianOrder: ["imdash", "integrations", "authz", "ado", "ace", "batch", "secrets", "delivery"],
+    dexianOrder: ["aiFeatures", "aiAssist", "imdash", "integrations", "authz", "ado", "ace", "batch", "secrets", "delivery"],
     projects: ["businesspilot", "semanticCache", "priceAction"],
   },
   {
@@ -102,7 +106,7 @@ export const resumeVariants: ResumeVariant[] = [
     audience: "PHP and Laravel platforms, APIs, databases, performance, enterprise integration",
     headline: "Senior Backend Engineer",
     summary:
-      "Senior backend engineer building production systems since 2021, with deep experience in PHP and Laravel, REST API design, MySQL, PostgreSQL and Redis. Led the migration of 20+ legacy modules to Laravel, cutting API response times by 30% and database load by 40%. Currently a tech lead delivering enterprise integrations with Adobe Experience Manager, Stibo STEP and Azure, and modernising legacy batch processing into containerised workflows. Also builds LLM-based products independently.",
+      "Senior backend engineer building production systems since 2021, with deep experience in PHP and Laravel, REST API design, MySQL, PostgreSQL and Redis. Led the migration of 20+ legacy modules to Laravel, cutting API response times by 30% and database load by 40%. Currently a technical lead delivering enterprise integrations with Adobe Experience Manager, Stibo STEP and Azure, and modernising legacy batch processing into containerised workflows. Also builds LLM-based products independently.",
     skills: [
       backend,
       data,
@@ -110,7 +114,7 @@ export const resumeVariants: ResumeVariant[] = [
       enterprise,
       ["Project Experience", "Java 21, Spring Boot, Node.js, NestJS, Python, FastAPI, Next.js"],
     ],
-    dexianOrder: ["imdash", "integrations", "batch", "secrets", "delivery", "ado", "authz", "ace"],
+    dexianOrder: ["imdash", "integrations", "batch", "secrets", "delivery", "ado", "authz", "ace", "aiFeatures"],
     projects: ["businesspilot", "semanticCache"],
   },
   {
@@ -120,7 +124,7 @@ export const resumeVariants: ResumeVariant[] = [
     audience: "Architecture, modernization, event-driven systems, cloud and CI/CD, technical leadership",
     headline: "Senior Software Engineer | Platform & Enterprise Modernization",
     summary:
-      "Senior software engineer and tech lead building production systems since 2021, focused on modernising enterprise platforms. Designed a client proof of concept that moves IBM App Connect Enterprise integrations to Kafka-based Java microservices on AWS, migrated legacy cron processing to containerised batch workflows, and led a 20+ module migration from Core PHP to Laravel that improved application performance by approximately 40%. Comfortable across architecture, delivery pipelines, secrets management and observability, with independent experience building multi-tenant, LLM-based products.",
+      "Senior software engineer and technical lead building production systems since 2021, focused on modernising enterprise platforms. Designed a client proof of concept that moves IBM App Connect Enterprise integrations to Kafka-based Java microservices on AWS, migrated legacy cron processing to containerised batch workflows, and led a 20+ module migration from Core PHP to Laravel that improved application performance by approximately 40%. Comfortable across architecture, delivery pipelines, secrets management and observability, with independent experience building multi-tenant, LLM-based products.",
     skills: [
       ["Architecture", "Legacy modernisation, event-driven design, microservices, enterprise integration, containerised batch workflows, observability"],
       cloud,
@@ -129,15 +133,16 @@ export const resumeVariants: ResumeVariant[] = [
       enterprise,
       ["Project Experience", "Java 21, Spring Boot, Kong API Gateway, AWS ECS Fargate, Application Load Balancer, NestJS, OpenTelemetry"],
     ],
-    dexianOrder: ["ace", "batch", "secrets", "delivery", "imdash", "integrations", "ado", "authz"],
+    dexianOrder: ["ace", "batch", "secrets", "delivery", "imdash", "integrations", "ado", "authz", "aiFeatures"],
     projects: ["businesspilot", "priceAction"],
   },
 ];
 
 export const resumeEducation = {
-  degree: "Bachelor of Technology (B.Tech) in Computer Science",
-  school: "Dr. Sudhir Engineering College",
-  certification: "Linux Mastery (Udemy)",
+  degree: "Bachelor of Technology (B.Tech) in Electronics and Communication Engineering",
+  school: "Dr. Sudhir Chandra Sur Degree Engineering College",
+  // TODO: add the third certification once the name, issuer and year are confirmed. Do not guess.
+  certification: "Linux Mastery (Udemy, 2023); Website Performance Optimization for Developers & IT Leaders (Udemy, 2024)",
   careerNote:
     "Mar – Jun 2024: transition between roles. Jan – Jul 2025: focused study in backend architecture, containerisation and system design.",
 };

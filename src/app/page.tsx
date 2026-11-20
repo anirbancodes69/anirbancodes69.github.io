@@ -13,7 +13,7 @@ export default function Home() {
             <div className="lg:col-span-7">
               <p className="inline-flex items-center gap-3 rounded-full border border-line bg-surface/80 py-1.5 pr-4 pl-3.5 font-mono text-xs text-muted">
                 <span aria-hidden className="status-dot" />
-                Tech Lead at Dexian · building BusinessPilot
+                Technical Lead at Dexian · independently building BusinessPilot
               </p>
               <h1 className="mt-7 text-5xl font-semibold tracking-[-0.035em] sm:text-6xl xl:text-7xl">
                 {profile.name}
